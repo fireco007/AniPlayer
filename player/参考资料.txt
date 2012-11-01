@@ -1,0 +1,27 @@
+视频输出线程中如下处理:
+    start_time = now();
+    ....
+    vo->display( picture );
+    last_video_pts = picture->pts;
+    end_time = now();
+    rest_time = end_time - start_time;
+    av_diff = last_audio_pts - last_video_pts;
+    if ( av_diff > 0.2 )
+    {
+        if ( av_diff < 0.5 ) rest_time -= rest_time / 4;
+        else rest_time -= rest_time / 2;
+    }
+    else if ( av_diff < -0.2)
+    {
+        if ( av_diff > -0.5 ) rest_time += rest_time / 4;
+        else rest_time += rest_time / 2;
+    }
+    if ( rest_time > 0 )
+        usleep(rest_time);
+
+
+AL_SOURCE_RELATIVE
+AL_BUFFER
+AL_SOURCE_STATE
+AL_BUFFERS_QUEUED
+AL_BUFFERS_PROCESSED

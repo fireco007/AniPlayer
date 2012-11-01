@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7EDEFD85-3551-415A-BB53-32D5DA375560}</ProjectGuid>
+    <RootNamespace>player</RootNamespace>
+    <ProjectName>AniPlayer</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>H:\A_GNU\GTK\lib\glib-2.0\include;H:\A_GNU\GTK\lib\gtk-2.0\include;H:\A_GNU\GTK\include;H:\A_GNU\GTK\include\atk-1.0;H:\A_GNU\GTK\include\cairo;H:\A_GNU\GTK\include\fontconfig;H:\A_GNU\GTK\include\freetype2;H:\A_GNU\GTK\include\gail-1.0;H:\A_GNU\GTK\include\gdk-pixbuf-2.0;H:\A_GNU\GTK\include\glib-2.0;H:\A_GNU\GTK\include\gtk-2.0;H:\A_GNU\GTK\include\libpng14;H:\A_GNU\GTK\include\pango-1.0;H:\A_GNU\GTK\include\pixman-1;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>H:\A_GNU\GTK\lib\glib-2.0\include;H:\A_GNU\GTK\lib\gtk-2.0\include;H:\A_GNU\GTK\include;H:\A_GNU\GTK\include\atk-1.0;H:\A_GNU\GTK\include\cairo;H:\A_GNU\GTK\include\fontconfig;H:\A_GNU\GTK\include\freetype2;H:\A_GNU\GTK\include\gail-1.0;H:\A_GNU\GTK\include\gdk-pixbuf-2.0;H:\A_GNU\GTK\include\glib-2.0;H:\A_GNU\GTK\include\gtk-2.0;H:\A_GNU\GTK\include\libpng14;H:\A_GNU\GTK\include\pango-1.0;H:\A_GNU\GTK\include\pixman-1;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>H:\A_GNU\GTK\lib\glib-2.0\include;H:\A_GNU\GTK\lib\gtk-2.0\include;H:\A_GNU\GTK\include;H:\A_GNU\GTK\include\atk-1.0;H:\A_GNU\GTK\include\cairo;H:\A_GNU\GTK\include\fontconfig;H:\A_GNU\GTK\include\freetype2;H:\A_GNU\GTK\include\gail-1.0;H:\A_GNU\GTK\include\gdk-pixbuf-2.0;H:\A_GNU\GTK\include\glib-2.0;H:\A_GNU\GTK\include\gtk-2.0;H:\A_GNU\GTK\include\libpng14;H:\A_GNU\GTK\include\pango-1.0;H:\A_GNU\GTK\include\pixman-1;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>H:\A_GNU\GTK\lib\glib-2.0\include;H:\A_GNU\GTK\lib\gtk-2.0\include;H:\A_GNU\GTK\include;H:\A_GNU\GTK\include\atk-1.0;H:\A_GNU\GTK\include\cairo;H:\A_GNU\GTK\include\fontconfig;H:\A_GNU\GTK\include\freetype2;H:\A_GNU\GTK\include\gail-1.0;H:\A_GNU\GTK\include\gdk-pixbuf-2.0;H:\A_GNU\GTK\include\glib-2.0;H:\A_GNU\GTK\include\gtk-2.0;H:\A_GNU\GTK\include\libpng14;H:\A_GNU\GTK\include\pango-1.0;H:\A_GNU\GTK\include\pixman-1;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>H:\A_GNU\ffmpeg-20121020-win32-dev\include;H:\A_GNU\ffmpeg-20121020-win32-dev\include\libavcodec;H:\A_GNU\ffmpeg-20121020-win32-dev\include\libavfilter;H:\A_GNU\ffmpeg-20121020-win32-dev\include\libavformat;H:\A_GNU\ffmpeg-20121020-win32-dev\include\libavutil;H:\A_GNU\ffmpeg-20121020-win32-dev\include\libswresample;H:\A_GNU\ffmpeg-20121020-win32-dev\include\libswscale</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>H:\A_GNU\GTK\lib\atk-1.0.lib;H:\A_GNU\GTK\lib\cairo.lib;H:\A_GNU\GTK\lib\expat.lib;H:\A_GNU\GTK\lib\fontconfig.lib;H:\A_GNU\GTK\lib\freetype.lib;H:\A_GNU\GTK\lib\gailutil.lib;H:\A_GNU\GTK\lib\gdk_pixbuf-2.0.lib;H:\A_GNU\GTK\lib\gdk-win32-2.0.lib;H:\A_GNU\GTK\lib\gio-2.0.lib;H:\A_GNU\GTK\lib\glib-2.0.lib;H:\A_GNU\GTK\lib\gmodule-2.0.lib;H:\A_GNU\GTK\lib\gobject-2.0.lib;H:\A_GNU\GTK\lib\gthread-2.0.lib;H:\A_GNU\GTK\lib\gtk-win32-2.0.lib;H:\A_GNU\GTK\lib\intl.lib;H:\A_GNU\GTK\lib\libpng.lib;H:\A_GNU\GTK\lib\pango-1.0.lib;H:\A_GNU\GTK\lib\pangocairo-1.0.lib;H:\A_GNU\GTK\lib\pangoft2-1.0.lib;H:\A_GNU\GTK\lib\pangowin32-1.0.lib;H:\A_GNU\GTK\lib\zdll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>H:\A_GNU\ffmpeg-20121005-win64-dev\include\libavcodec;H:\A_GNU\ffmpeg-20121005-win64-dev\include\libavformat;H:\A_GNU\ffmpeg-20121005-win64-dev\include\libavutil;H:\A_GNU\ffmpeg-20121005-win64-dev\include;H:\A_GNU\posix_for_win\Pre-built.2\include;H:\A_GNU\open_al\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>H:\A_GNU\GTK\lib\atk-1.0.lib;H:\A_GNU\GTK\lib\cairo.lib;H:\A_GNU\GTK\lib\expat.lib;H:\A_GNU\GTK\lib\fontconfig.lib;H:\A_GNU\GTK\lib\freetype.lib;H:\A_GNU\GTK\lib\gailutil.lib;H:\A_GNU\GTK\lib\gdk_pixbuf-2.0.lib;H:\A_GNU\GTK\lib\gdk-win32-2.0.lib;H:\A_GNU\GTK\lib\gio-2.0.lib;H:\A_GNU\GTK\lib\glib-2.0.lib;H:\A_GNU\GTK\lib\gmodule-2.0.lib;H:\A_GNU\GTK\lib\gobject-2.0.lib;H:\A_GNU\GTK\lib\gthread-2.0.lib;H:\A_GNU\GTK\lib\gtk-win32-2.0.lib;H:\A_GNU\GTK\lib\intl.lib;H:\A_GNU\GTK\lib\libpng.lib;H:\A_GNU\GTK\lib\pango-1.0.lib;H:\A_GNU\GTK\lib\pangocairo-1.0.lib;H:\A_GNU\GTK\lib\pangoft2-1.0.lib;H:\A_GNU\GTK\lib\pangowin32-1.0.lib;H:\A_GNU\GTK\lib\zdll.lib;avcodec.lib;avformat.lib;avutil.lib;swscale.lib;swresample.lib;pthreadVC2.lib;OpenAL32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>H:\A_GNU\ffmpeg-20121005-win64-dev\lib;H:\A_GNU\posix_for_win\Pre-built.2\lib\x64;H:\A_GNU\open_al\libs\Win64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>H:\A_GNU\GTK\lib\atk-1.0.lib;H:\A_GNU\GTK\lib\cairo.lib;H:\A_GNU\GTK\lib\expat.lib;H:\A_GNU\GTK\lib\fontconfig.lib;H:\A_GNU\GTK\lib\freetype.lib;H:\A_GNU\GTK\lib\gailutil.lib;H:\A_GNU\GTK\lib\gdk_pixbuf-2.0.lib;H:\A_GNU\GTK\lib\gdk-win32-2.0.lib;H:\A_GNU\GTK\lib\gio-2.0.lib;H:\A_GNU\GTK\lib\glib-2.0.lib;H:\A_GNU\GTK\lib\gmodule-2.0.lib;H:\A_GNU\GTK\lib\gobject-2.0.lib;H:\A_GNU\GTK\lib\gthread-2.0.lib;H:\A_GNU\GTK\lib\gtk-win32-2.0.lib;H:\A_GNU\GTK\lib\intl.lib;H:\A_GNU\GTK\lib\libpng.lib;H:\A_GNU\GTK\lib\pango-1.0.lib;H:\A_GNU\GTK\lib\pangocairo-1.0.lib;H:\A_GNU\GTK\lib\pangoft2-1.0.lib;H:\A_GNU\GTK\lib\pangowin32-1.0.lib;H:\A_GNU\GTK\lib\zdll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>H:\A_GNU\GTK\lib\atk-1.0.lib;H:\A_GNU\GTK\lib\cairo.lib;H:\A_GNU\GTK\lib\expat.lib;H:\A_GNU\GTK\lib\fontconfig.lib;H:\A_GNU\GTK\lib\freetype.lib;H:\A_GNU\GTK\lib\gailutil.lib;H:\A_GNU\GTK\lib\gdk_pixbuf-2.0.lib;H:\A_GNU\GTK\lib\gdk-win32-2.0.lib;H:\A_GNU\GTK\lib\gio-2.0.lib;H:\A_GNU\GTK\lib\glib-2.0.lib;H:\A_GNU\GTK\lib\gmodule-2.0.lib;H:\A_GNU\GTK\lib\gobject-2.0.lib;H:\A_GNU\GTK\lib\gthread-2.0.lib;H:\A_GNU\GTK\lib\gtk-win32-2.0.lib;H:\A_GNU\GTK\lib\intl.lib;H:\A_GNU\GTK\lib\libpng.lib;H:\A_GNU\GTK\lib\pango-1.0.lib;H:\A_GNU\GTK\lib\pangocairo-1.0.lib;H:\A_GNU\GTK\lib\pangoft2-1.0.lib;H:\A_GNU\GTK\lib\pangowin32-1.0.lib;H:\A_GNU\GTK\lib\zdll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="audio_dec.cpp" />
+    <ClCompile Include="audio_render.cpp" />
+    <ClCompile Include="file_handler.cpp" />
+    <ClCompile Include="file_util.cpp" />
+    <ClCompile Include="player.cpp" />
+    <ClCompile Include="player_common.cpp" />
+    <ClCompile Include="pthread_queue.cpp" />
+    <ClCompile Include="video_dec.cpp" />
+    <ClCompile Include="video_render.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="audio_dec.h" />
+    <ClInclude Include="audio_render.h" />
+    <ClInclude Include="file_util.h" />
+    <ClInclude Include="player_common.h" />
+    <ClInclude Include="file_handler.h" />
+    <ClInclude Include="pthread_queue.h" />
+    <ClInclude Include="video_dec.h" />
+    <ClInclude Include="video_render.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="参考资料.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
